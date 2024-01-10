@@ -218,6 +218,7 @@ void createNewFlight(){ // create new flight, pass parameters
 	cout << "Enter flight date (YYYY-MM-DD): "; cin >> temp; tempF.setDepartureDate(temp);
 	cout << "Enter flight time (HH:MM): "; cin >> temp; tempF.setDepartureTime(temp);
 	vFlight.push_back(tempF);
+	saveFlight();
 	cout << "New flight successfully entered. Returning to the main menu. \n";
 	mainMenu();
 }
